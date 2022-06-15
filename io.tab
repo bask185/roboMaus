@@ -1,4 +1,4 @@
-2	RS485DIR	OUTPUT
+13	RS485DIR	OUTPUT
 3	detector1pin	INPUT_PULLUP
 4	detector2pin	INPUT_PULLUP
 7	servoPin1	OUTPUT
@@ -7,7 +7,7 @@
 10	recordPin	INPUT_PULLUP
 11	greenLedPin	OUTPUT
 12	yellowLedPin	OUTPUT
-13	redLedPin	OUTPUT
+A4	redLedPin	OUTPUT
 A0	lowPosPin	INPUT
 A1	highPosPin	INPUT
 A2	speedPin	INPUT

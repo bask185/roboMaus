@@ -134,7 +134,7 @@ void processInputs()
 
     if(   play.getState() == FALLING ) { eventHandler.startPlaying()   ; }
     if(   stop.getState() == FALLING ) { eventHandler.stopRecording()  ; 
-                                         eventHandler.stopPlaying()    ; }  
+                                         eventHandler.stopPlaying()    ; }                                     
     if( record.getState() == FALLING ) { eventHandler.startRecording() ; }
 }
 
@@ -142,7 +142,7 @@ void processInputs()
 void setup()
 {
     initIO() ;
-    Xnet.setup( Loco128,  2) ;
+    Xnet.setup( Loco128,  RS485DIR ) ;
     point.begin() ;
 }
 
@@ -156,3 +156,4 @@ void loop()
     point.sweep() ;
     Xnet.update() ;
 }
+
